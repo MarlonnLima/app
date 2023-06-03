@@ -1,26 +1,72 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <home />
+  <sobre />
+  <projetos />
+  <contato />
+  <div class="text-center text-white p-4" style="background-color: #003078">
+    Todos os direitos reservados a Marlon
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Contato from '@/layouts/Contato.vue'
+import Home from '@/layouts/Home.vue';
+import Sobre from '@/layouts/Sobre.vue'
+import Projetos from '@/layouts/Projetos.vue'
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Home,
+    Sobre,
+    Projetos,
+    Contato
+  },
+};
 </script>
 
 <style>
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.background-azul {
+  background-image: linear-gradient(
+    to bottom,
+    #277dff,
+    #2374f1,
+    #1e6ae3,
+    #1861d5,
+    #1158c7,
+    #0d52bc,
+    #084bb0,
+    #0345a5,
+    #02409a,
+    #013a8e,
+    #013583,
+    #003078
+  );;
+}
+.box{
+  height: 400px;
+}
+@media (max-width: 1366px) {
+  html {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
 }
 </style>
