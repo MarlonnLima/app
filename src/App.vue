@@ -1,6 +1,7 @@
 <template>
   <home />
   <sobre />
+  <servicos />
   <projetos />
   <contato />
   <div class="text-center text-white p-4" style="background-color: #003078">
@@ -11,6 +12,7 @@
 <script>
 import Contato from '@/layouts/Contato.vue'
 import Home from '@/layouts/Home.vue';
+import Servicos from '@/layouts/Servicos.vue'
 import Sobre from '@/layouts/Sobre.vue'
 import Projetos from '@/layouts/Projetos.vue'
 
@@ -20,7 +22,8 @@ export default {
     Home,
     Sobre,
     Projetos,
-    Contato
+    Contato,
+    Servicos,
   },
 };
 </script>
@@ -31,6 +34,11 @@ export default {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
+
+.float-right{
+  float: right;
+}
+
 .background-azul {
   background-image: linear-gradient(
     to bottom,
