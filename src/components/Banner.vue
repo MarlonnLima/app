@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style scoped>
+
 div {
   font-size: 5rem;
 }
@@ -59,7 +60,7 @@ img{
 }
 
 .icone{
-   font-size: 50px;
+   font-size: clamp(30px, 10vw, 40px);
    color: #fff;
    transition: 0.5s
 }

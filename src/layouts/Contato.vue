@@ -5,16 +5,30 @@
     <div class="air air3"></div>
     <div class="air air4"></div>
   </section>
-  <form action="https://www.google.com" class="background-azul">
+  <form action="http://localhost/sendMail/" method="POST" class="background-azul">
     <br />
     <h1 id="contato" class="text-center my-5 text-white">Me mande um e-mail</h1>
     <div class="container w-50">
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="Primeiro Nome" required/>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Primeiro Nome"
+            name="firstName"
+            v-model="firstName"
+            required
+          />
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Segundo Nome" required/>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Segundo Nome"
+            name="secondName"
+            v-model="secondName"
+            required
+          />
         </div>
       </div>
 
@@ -24,6 +38,8 @@
             type="email"
             class="form-control"
             placeholder="Digite seu melhor e-mail"
+            name="email"
+            v-model="email"
             required
           />
         </div>
@@ -35,6 +51,8 @@
             class="form-control"
             rows="5"
             placeholder="Mande sua mensagem!"
+            name="mensagem"
+            v-model="mensagem"
             required
           ></textarea>
         </div>
@@ -49,12 +67,18 @@
 </template>
 
 <script>
-import BotaoSend from '@/components/BotaoSend.vue'
+import BotaoSend from "@/components/BotaoSend.vue";
 export default {
   name: "Contato",
+  data: () => ({
+    firstName: "",
+    secondName: "",
+    email: "",
+    mensagem: "",
+  }),
   components: {
     BotaoSend,
-  }
+  },
 };
 </script>
 
