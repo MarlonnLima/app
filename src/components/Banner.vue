@@ -13,9 +13,9 @@
         <div id="img-container">      
             <img src="@/assets/marlon.png">
             <div class="d-flex gap-3 justify-content-center">
-            <span><i class="fa-brands fa-linkedin icone" title="LinkedIn"></i></span>
-            <span><i class="fa-solid fa-file icone" title="Baixe meu Curriculo"></i></span>
-            <span><i class="fa-brands fa-github icone" title="Github"></i></span>
+            <a href="https://www.linkedin.com/in/marlonn-lima/" target="_blank"><i class="fa-brands fa-linkedin icone" title="LinkedIn"></i></a>
+            <a href="../baixavel/curriculo.pdf" download="curriculo.pdf" type="application/pdf"><i class="fa-solid fa-file icone" title="Baixe meu Curriculo"></i></a>
+            <a href="https://github.com/MarlonnLima" target="_blank"><i class="fa-brands fa-github icone" title="Github"></i></a>
             </div> 
         </div>
 

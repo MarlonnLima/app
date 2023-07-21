@@ -15,8 +15,8 @@
     <div class="container w-50" data-aos="zoom-in" id="container-w">
       <div class="row" data-aos="zoom-in">
         <div class="col">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://marlondev.com.br">
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://marlondev.com.br" />
 
           <input
             type="text"
@@ -55,10 +55,9 @@
         </div>
       </div>
       <div class="row mt-3" data-aos="zoom-in">
-        <div class="col">
-        </div>
+        <div class="col"></div>
       </div>
-          <botao-send />
+      <botao-send />
     </div>
   </form>
 </template>
@@ -81,12 +80,18 @@ export default {
 
 <style scoped>
 /* eslint-disable */
+
+input {
+  font-size: 1.4rem;
+}
+
 section {
   position: relative;
   width: 100%;
   height: 150px;
   overflow: hidden;
 }
+
 section .air {
   position: absolute;
   bottom: 0;
@@ -146,8 +151,8 @@ section .air.air4 {
     width: 80% !important;
   }
 
-  button{
-    font-size: 1rem
+  button {
+    font-size: 1rem;
   }
 }
 </style>

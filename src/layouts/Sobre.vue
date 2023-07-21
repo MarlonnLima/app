@@ -7,7 +7,7 @@
         </div>
         <div class="col-6 d-flex align-items-center justify-content-center">
             <div>
-            Estudante de sistemas para internet pelo Senac e <strong>Desenvolvedor Fullstack</strong> com foco em <strong>Web</strong>. O aperfeiçoamento profissional na área é minha grande motivação; <br> <br>
+            Estudante de sistemas para internet pelo Senac e <strong>Desenvolvedor Fullstack</strong> com foco em <strong>Web</strong>. O aperfeiçoamento profissional na área é minha grande motivação. <br> <br>
             Tenho projetos feitos usando <strong>PHP</strong>, <strong>React</strong>, <strong>Vue</strong>, <strong>Laravel</strong>. O que realmente importa, independemente da linguagem eu sei programar.
             </div>
         </div>
