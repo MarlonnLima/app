@@ -335,4 +335,10 @@ h1 {
     font-size: 8vh;
   }
 }
+
+@media(max-width: 420px) {
+  .nav ul li a {
+    font-size: 6vh;
+  }
+}
 </style>

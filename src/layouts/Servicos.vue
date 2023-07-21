@@ -15,9 +15,7 @@
           <h3 class="text-muted text-center">Desenvolverei soluções para você e para seu negócio</h3>
         </div>
 
-        <button @click="card1 = !card1; rotacionar($event)" class="round-button">
-          <span @click="card1 = !card1; rotacionar($event)" class="plus-sign">+</span>
-        </button>
+        <img src="@/assets/mais.png" @click="card1 = !card1; rotacionar($event)" class="round-button">
       </div>
       <div
         id="service-card"
@@ -29,9 +27,7 @@
         <div v-else>
           <h3 class="text-center">Consultoria para compra de domínio e hospedagem</h3>
         </div>
-        <button @click="card2 = !card2; rotacionar($event)" class="round-button">
-          <span @click="card2 = !card2; rotacionar($event)" class="plus-sign">+</span>
-        </button>
+        <img src="@/assets/mais.png" @click="card2 = !card2; rotacionar($event)" class="round-button">
       </div>
       <div
         id="service-card"
@@ -43,9 +39,7 @@
         <div v-else>
           <h3 class="text-muted text-center">Prestação de manutenção a projetos</h3>
         </div>
-        <button @click="card3 = !card3; rotacionar($event)" class="round-button">
-          <span @click="card3 = !card3; rotacionar($event)" role="button" class="plus-sign">+</span>
-        </button>
+        <img src="@/assets/mais.png" @click="card3 = !card3; rotacionar($event)" class="round-button">
       </div>
     </div>
   </div>
@@ -89,7 +83,7 @@ export default {
 
 .round-button {
   position: absolute;
-  bottom: -30px;
+  bottom: calc(-20px - 1rem);
   width: 60px;
   height: 60px;
   border-radius: 50%;
