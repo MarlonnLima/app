@@ -1,16 +1,16 @@
 <template>
-  <div class="row text-white">
+  <div class="row text-white" id="container-banner">
     <div class="col-8">
       <div class="mx-1"> 
-        <small class="d-block">Olá meu nome é Marlon, sou um</small>
+        <small class="d-block" data-aos="zoom-in-right" data-aos-duration="1000">Olá meu nome é Marlon, sou um</small>
         <span class="linha">FULL</span>STACK</div>
       <div class="afastar-da-esquerda-1">
         DE<span class="linha">VELOPER</span>
-        <small class="afastar-da-esquerda-1 d-block">Vou resolver seus problemas com programação web</small>
+        <small class="afastar-da-esquerda-1 d-block" data-aos="zoom-in-left" data-aos-duration="1000">Vou resolver seus problemas com programação web</small>
       </div>
     </div>
     <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-        <div>      
+        <div id="img-container">      
             <img src="@/assets/marlon.png">
             <div class="d-flex gap-3 justify-content-center">
             <span><i class="fa-brands fa-linkedin icone" title="LinkedIn"></i></span>
@@ -35,7 +35,8 @@ export default {
 <style scoped>
 
 div {
-  font-size: 5rem;
+  font-size: 4rem;
+  text-align: center;
 }
 small {
   font-size: 1.6rem;
@@ -104,6 +105,27 @@ img{
   }
   100%{
     border-color: white;
+  }
+}
+
+@media(max-width: 767px){
+  #container-banner{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .afastar-da-esquerda-1{
+    margin: 0;
+  }
+  img{
+    width: 100px;
+    height: 100px;
+  }
+  .icone{
+       font-size: clamp(20px, 8vw, 30px);
+  }
+  div{
+    font-size: 3.5rem
   }
 }
 </style>

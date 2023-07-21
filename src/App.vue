@@ -25,7 +25,7 @@ export default {
     Contato,
     Servicos,
   },
-};
+}
 </script>
 
 <style>
@@ -34,7 +34,9 @@ export default {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
-
+.text-justify{
+  text-align: justify
+}
 .float-right{
   float: right;
 }
@@ -59,6 +61,7 @@ export default {
 .box{
   height: 400px;
 }
+
 @media (max-width: 1366px) {
   html {
     font-size: 14px;

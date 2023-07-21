@@ -1,7 +1,7 @@
 <template>
 
-  <a href="#contato" class="logo" target="_blank">
-    <img src="@/assets/logo.png" alt="" />
+  <a href="/" class="logo">
+    <img src="@/assets/logo_com_texto.png" alt="" />
   </a>
 
   <input class="menu-icon" @change="handleChange" type="checkbox" id="menu-icon" name="menu-icon" />
@@ -307,7 +307,7 @@ h1 {
   transition: all 250ms linear;
 }
 .logo img {
-  height: 26px;
+  height: 50px;
   width: auto;
   display: block;
 }

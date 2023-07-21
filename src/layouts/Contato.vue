@@ -5,11 +5,15 @@
     <div class="air air3"></div>
     <div class="air air4"></div>
   </section>
-  <form action="http://localhost/sendMail/" method="POST" class="background-azul">
+  <form
+    action="http://localhost/sendMail/"
+    method="POST"
+    class="background-azul"
+  >
     <br />
     <h1 id="contato" class="text-center my-5 text-white">Me mande um e-mail</h1>
-    <div class="container w-50">
-      <div class="row">
+    <div class="container w-50" data-aos="zoom-in" id="container-w">
+      <div class="row" data-aos="zoom-in">
         <div class="col">
           <input
             type="text"
@@ -32,7 +36,7 @@
         </div>
       </div>
 
-      <div class="row mt-3">
+      <div class="row mt-3" data-aos="zoom-in">
         <div class="col">
           <input
             type="email"
@@ -45,7 +49,7 @@
         </div>
       </div>
 
-      <div class="row mt-3">
+      <div class="row mt-3" data-aos="zoom-in">
         <div class="col">
           <textarea
             class="form-control"
@@ -57,11 +61,11 @@
           ></textarea>
         </div>
       </div>
-      <div class="row mt-3">
+      <div class="row mt-3" data-aos="zoom-in">
         <div class="col">
-          <botao-send />
         </div>
       </div>
+          <botao-send />
     </div>
   </form>
 </template>
@@ -141,6 +145,16 @@ section .air.air4 {
   }
   100% {
     background-position-x: -1000px;
+  }
+}
+
+@media (max-width: 550px) {
+  #container-w {
+    width: 80% !important;
+  }
+
+  button{
+    font-size: 1rem
   }
 }
 </style>

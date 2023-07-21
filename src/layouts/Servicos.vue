@@ -1,10 +1,10 @@
 <template>
-  <h1 class="text-center my-5 text-secondary">Serviços</h1>
-  <div class="container">
-    <div class="row gap-5 justify-content-center">
+  <h1 id="servicos" class="text-center my-5 text-secondary">Serviços</h1>
+  <div class="container" style="margin-bottom: 100px" data-aos="zoom-in">
+    <div class="row gap-5 justify-content-center" id="flex-div">
       <div
         id="service-card"
-        class="col-3 d-flex justify-content-center align-items-center shadow"
+        class="col-3 d-flex justify-content-center align-items-center shadow flex-wrap"
       >
         
         <div v-if="card1">
@@ -44,7 +44,7 @@
           <h3 class="text-muted text-center">Prestação de manutenção a projetos</h3>
         </div>
         <button @click="card3 = !card3; rotacionar($event)" class="round-button">
-          <span @click="card3 = !card3; rotacionar($event)" class="plus-sign">+</span>
+          <span @click="card3 = !card3; rotacionar($event)" role="button" class="plus-sign">+</span>
         </button>
       </div>
     </div>
@@ -53,6 +53,7 @@
 
 
 <script>
+
 export default {
   name: "Servicos",
   data: () => ({
@@ -67,13 +68,18 @@ export default {
    }
   },
 };
+
 </script>
 
 
 <style scoped>
 #service-card {
   height: 30vh;
-  font-size: 50px;
+  max-height:250px;
+  min-height: 200px;
+  max-width: 300px;
+  min-width: 250px;
+  font-size: 3rem;
   position: relative;
 }
 
@@ -124,4 +130,11 @@ export default {
   transform: translateX(10px);
   opacity: 0;
 }
+
+@media( max-width: 550px){
+#flex-div{
+  gap: 50px !important;
+}
+}
+
 </style>
