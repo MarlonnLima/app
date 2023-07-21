@@ -136,5 +136,4 @@ export default {
   gap: 50px !important;
 }
 }
-
 </style>

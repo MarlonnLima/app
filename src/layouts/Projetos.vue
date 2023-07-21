@@ -1,10 +1,28 @@
 <template>
   <h1 id="projetos" class="text-center my-5 text-secondary">Projetos</h1>
-  <div class="container mb-5 shadow" data-aos="zoom-in">
-    <div class="row d-flex justify-content-center align-items-center">
-      <div
-        class="col-8 d-flex align-items-center justify-content-center flex-column"
-      >
+  <div class="container shadow mb-5" data-aos="zoom-in" id="container-w2">
+    <div class="row d-flex justify-content-center align-items-center" id="container-projeto2">
+      <div class="col-4 float-right" id="div-img">
+        <img class="img-fluid" src="@/assets/devnews.png" />
+      </div>
+      <div class="col-8 d-flex align-items-center justify-content-center flex-column my-3">
+        <h2 class="my-3">Dev News</h2>
+        <div class="mb-3 text-justify">
+          O objetivo do projeto é manter os desenvolvedores informados sobre as últimas novidades da
+          indústria entre membros da comunidade de tecnologia.
+          <br>
+        </div>
+        <button class="btn btn-primary w-100 mb-3"><a class="text-decoration-none text-white "
+            href="https://devnews.marlondev.com.br">Veja</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5 shadow" data-aos="zoom-in" id="container-w3">
+
+
+    <div class="row d-flex justify-content-center align-items-center" id="container-projetos">
+      <div class="col-8 d-flex align-items-center justify-content-center flex-column">
         <h2 class="my-3">Oticas Vida</h2>
         <div class="mb-3 text-justify">
           Uma landing page com o objetivo de fornecer uma experiência
@@ -15,35 +33,11 @@
           óculos que combinem estilo, qualidade e conforto, proporcionando um
           direcionamento agradável à loja.
         </div>
-        <button class="btn btn-primary w-100 mb-3"><a class="text-decoration-none text-white " href="https://marlonnlima.github.io/Otica-Responsiva/">Veja</a></button>
+        <button class="btn btn-primary w-100 mb-3"><a class="text-decoration-none text-white "
+            href="https://marlonnlima.github.io/Otica-Responsiva/">Veja</a></button>
       </div>
-      <div class="col-4 float-right">
+      <div class="col-4 float-right" id="div-img2">
         <img class="img-fluid" src="@/assets/proj_oculos.png" />
-      </div>
-    </div>
-  </div>
-
-  <div class="container shadow mb-5" data-aos="zoom-in"> 
-    <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-4 float-right">
-        <img class="img-fluid" src="@/assets/proj_oculos.png" />
-      </div>
-      <div
-        class="col-8 d-flex align-items-center justify-content-center flex-column"
-      >
-        <h2 class="my-3">Oticas Vida</h2>
-        <div class="mb-3 text-justify">
-          Estudante de sistemas para internet pelo Senac,
-          <strong>Desenvolvedor Fullstack</strong> com foco em
-          <strong>Web</strong>, como profissional sou extremamente motivado e
-          sempre estou aprimorando minhas habilidades, todos os dias tentando
-          ser melhor do que no dia anterior. <br />
-          Tenho projetos feitos usando, <strong>PHP</strong>,
-          <strong>React</strong>, <strong>Vue</strong>,
-          <strong>Laravel</strong>, mas bom isso é irrelevante o importante é
-          que independente da linguagem eu sei programar.
-        </div>
-        <button class="btn btn-primary w-100 mb-3">Veja</button>
       </div>
     </div>
   </div>
@@ -58,13 +52,26 @@ export default {
 
 
 <style scoped>
-*{
-  font-size: 1.2rem
-}
-img {
-  width: 350px;
+#container-w2{
+  width: 90%;
 }
 
+#container-w3{
+  width: 90%;
+}
+
+* {
+  font-size: 1.2rem
+}
+
+img {
+  width: 350px;
+  max-height: 202px;
+}
+h1{
+  font-size: calc(1.375rem + 1.5vw);
+
+}
 h2 {
   color: #3586ff;
   font-size: 1.6rem
@@ -72,5 +79,31 @@ h2 {
 
 #card:hover {
   flex: 1.5;
+}
+
+@media(max-width: 550px) {
+  #container-projetos {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  #container-projetos img {
+    width: 200px !important;
+  }
+
+  #container-projeto2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #div-img {
+    width: 200px;
+    margin-top: 10px;
+  }
+
+  #div-img2 {
+    width: 200px;
+    margin-top: 10px;
+  }
 }
 </style>
