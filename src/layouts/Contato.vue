@@ -6,7 +6,7 @@
     <div class="air air4"></div>
   </section>
   <form
-    action="http://localhost/sendMail/"
+    action="https://formsubmit.co/marlon@marlondev.com.br"
     method="POST"
     class="background-azul"
   >
@@ -15,22 +15,15 @@
     <div class="container w-50" data-aos="zoom-in" id="container-w">
       <div class="row" data-aos="zoom-in">
         <div class="col">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://marlondev.com.br">
+
           <input
             type="text"
             class="form-control"
-            placeholder="Primeiro Nome"
-            name="firstName"
+            placeholder="Insira seu Nome"
+            name="name"
             v-model="firstName"
-            required
-          />
-        </div>
-        <div class="col">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Segundo Nome"
-            name="secondName"
-            v-model="secondName"
             required
           />
         </div>
@@ -55,7 +48,7 @@
             class="form-control"
             rows="5"
             placeholder="Mande sua mensagem!"
-            name="mensagem"
+            name="message"
             v-model="mensagem"
             required
           ></textarea>

@@ -17,6 +17,9 @@
           O objetivo do projeto é manter os desenvolvedores informados sobre as
           últimas novidades da indústria entre membros da comunidade de
           tecnologia.
+          <br><br>
+          Usuario: recrutador@recrute.com<br>
+          Senha: recrutando
           <br />
         </div>
         <a
