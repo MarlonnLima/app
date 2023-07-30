@@ -16,7 +16,8 @@
       <div class="row" data-aos="zoom-in">
         <div class="col">
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://marlondev.com.br" />
+          <input type="hidden" name="_next" value="https://portfolio.marlondev.com.br/obrigado" />
+
 
           <input
             type="text"
@@ -82,6 +83,10 @@ export default {
 /* eslint-disable */
 
 input {
+  font-size: 1.4rem;
+}
+
+textarea {
   font-size: 1.4rem;
 }
 

@@ -2,11 +2,11 @@
   <div class="row text-white" id="container-banner">
     <div class="col-8">
       <div class="mx-1"> 
-        <small class="d-block" data-aos="zoom-in-right" data-aos-duration="1000">Olá meu nome é Marlon, sou um</small>
+        <small class="d-block" data-aos="zoom-in-right">Olá meu nome é Marlon, sou um</small>
         <span class="linha">FULL</span>STACK</div>
       <div class="afastar-da-esquerda-1">
         DE<span class="linha">VELOPER</span>
-        <small class="afastar-da-esquerda-1 d-block" data-aos="zoom-in-left" data-aos-duration="1000">Vou resolver seus problemas com programação web</small>
+        <small class="afastar-da-esquerda-1 d-block" data-aos="zoom-in-left">Vou resolver seus problemas com programação web</small>
       </div>
     </div>
     <div class="col-4 d-flex flex-column justify-content-center align-items-center">
@@ -67,13 +67,13 @@ img{
 }
 
 .fa-linkedin:hover{
-  color: #0A66C2;
+  color: gold;
 }
 .fa-file:hover{
-  color: #FFE294;
+  color: gold;
 }
 .fa-github:hover{
-  color: blueviolet;
+  color: gold;
 }
 @media(max-width: 1000px){
   .afastar-da-esquerda-1{

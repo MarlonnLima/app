@@ -1,7 +1,5 @@
 <template>
   <section>
-    <menu-button />
-
     <div id="stars-container">
       <span id="star"></span>
       <span id="star"></span>
@@ -24,7 +22,8 @@
     >
       <div class="row z-index-500">
         <div class="col">
-          <banner />
+          <h1 class="text-white texto-agradecimento">Obrigado!</h1>
+          <h2 class="text-center text-white">Retornando em {{ contador }}s</h2>
         </div>
       </div>
     </div>
@@ -36,24 +35,36 @@
 </template>
 
 <script>
-import Banner from "@/components/Banner.vue";
-import MenuButton from "@/components/MenuButton.vue";
 export default {
-  name: "Home",
-  components: {
-    Banner,
-    MenuButton,
+  name: "EmailResposta",
+  data: () => ({
+    contador: 5,
+  }),
+  methods: {
+    temporizador() {
+      this.contador -= 1;
+      if (this.contador <= 0) {
+        history.back(2);
+      }
+    },
+  },
+  mounted() {
+    setInterval(this.temporizador, 1000);
   },
 };
 </script>
 
 <style scoped>
+.texto-agradecimento {
+  font-size: 5rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.z-index-500{
+.z-index-500 {
   z-index: 500;
 }
 
@@ -64,128 +75,126 @@ export default {
   width: 100%;
   height: 100vh;
 }
-#star{
+#star {
   position: absolute;
   top: 50%;
   width: 4px;
   height: 4px;
   background-color: #fff;
   border-radius: 4px;
-  box-shadow: 0 0 0 6px rgba(255,255,255,0.1),
-  0 0 0 4px rgba(255,255,255,0.1),
-  0 0 0 2px rgba(255,255,255,1);
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.1),
+    0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 2px rgba(255, 255, 255, 1);
   animation: animate 3s linear infinite;
 }
 
-#star::before{
-
-content: '';
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-width: 300px;
-height: 1px;
-background: linear-gradient(90deg, #fff, transparent)
+#star::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
 }
 
-#star:nth-child(1){
-top: 0;
-right: 0;
-left: initial;
+#star:nth-child(1) {
+  top: 0;
+  right: 0;
+  left: initial;
 
-animation-delay: 0;
-animation-duration: 1s;
+  animation-delay: 0;
+  animation-duration: 1s;
 }
-#star:nth-child(2){
-top: 0;
-right: 80px;
-left: initial;
-animation-delay: 0.2s;
-animation-duration: 3s;
+#star:nth-child(2) {
+  top: 0;
+  right: 80px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
 }
-#star:nth-child(3){
-top: 80px;
-right: 0px;
-left: initial;
-animation-delay: 0.4s;
-animation-duration: 2s;
+#star:nth-child(3) {
+  top: 80px;
+  right: 0px;
+  left: initial;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
 }
-#star:nth-child(4){
-top: 80px;
-right: 180px;
-left: initial;
-animation-delay: 0.6s;
-animation-duration: 1.5s;
+#star:nth-child(4) {
+  top: 80px;
+  right: 180px;
+  left: initial;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
 }
-#star:nth-child(5){
-top: 0px;
-right: 400px;
-left: initial;
-animation-delay: 0.8s;
-animation-duration: 2.5s;
+#star:nth-child(5) {
+  top: 0px;
+  right: 400px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
 }
-#star:nth-child(6){
-top: 0px;
-right: 600px;
-left: initial;
-animation-delay: 1s;
-animation-duration: 3s;
+#star:nth-child(6) {
+  top: 0px;
+  right: 600px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 3s;
 }
-#star:nth-child(7){
-top: 300px;
-right: 0px;
-left: initial;
-animation-delay: 1.2s;
-animation-duration: 1.75s;
+#star:nth-child(7) {
+  top: 300px;
+  right: 0px;
+  left: initial;
+  animation-delay: 1.2s;
+  animation-duration: 1.75s;
 }
-#star:nth-child(8){
-top: 0px;
-right: 700px;
-left: initial;
-animation-delay: 1.4s;
-animation-duration: 1.25s;
+#star:nth-child(8) {
+  top: 0px;
+  right: 700px;
+  left: initial;
+  animation-delay: 1.4s;
+  animation-duration: 1.25s;
 }
-#star:nth-child(9){
-top: 0px;
-right: 1000px;
-left: initial;
-animation-delay: 0.75s;
-animation-duration: 2.25s;
+#star:nth-child(9) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 0.75s;
+  animation-duration: 2.25s;
 }
-#star:nth-child(10){
-top: 0px;
-right: 450px;
-left: initial;
-animation-delay: 2.75s;
-animation-duration: 2.25s;
+#star:nth-child(10) {
+  top: 0px;
+  right: 450px;
+  left: initial;
+  animation-delay: 2.75s;
+  animation-duration: 2.25s;
 }
-#star:nth-child(11){
-top: 0px;
-right: 800px;
-left: initial;
-animation-delay: 1.75s;
-animation-duration: 1.5s;
+#star:nth-child(11) {
+  top: 0px;
+  right: 800px;
+  left: initial;
+  animation-delay: 1.75s;
+  animation-duration: 1.5s;
 }
-#star:nth-child(12){
-top: 80px;
-right: 750px;
-left: initial;
-animation-delay: 0.2s;
-animation-duration: 1.5s;
+#star:nth-child(12) {
+  top: 80px;
+  right: 750px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 1.5s;
 }
-#star:nth-child(13){
-top: 0px;
-right: 900px;
-left: initial;
-animation-delay: 1.2s;
-animation-duration: 1.75s;
+#star:nth-child(13) {
+  top: 0px;
+  right: 900px;
+  left: initial;
+  animation-delay: 1.2s;
+  animation-duration: 1.75s;
 }
-#star:nth-child(14){
-top: 70px;
-right: 950px;
-left: initial;
-animation-delay: 1.75s;
-animation-duration: 1.2s;
+#star:nth-child(14) {
+  top: 70px;
+  right: 950px;
+  left: initial;
+  animation-delay: 1.75s;
+  animation-duration: 1.2s;
 }
 
 section {
@@ -264,17 +273,14 @@ section .air.air4 {
 }
 
 @keyframes animate {
-  0%
-  {
+  0% {
     transform: rotate(315deg) translateX(0);
     opacity: 1;
   }
-  70%
-  {
+  70% {
     opacity: 1;
   }
-  100%
-  {
+  100% {
     transform: rotate(315deg) translateX(-1000px);
     opacity: 0;
   }
